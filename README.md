@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<README lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
@@ -18,7 +17,6 @@
             overflow-x: hidden;
             background: #ffffff;
         }
-        
         .hero {
             background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             color: white;
@@ -27,7 +25,6 @@
             position: relative;
             overflow: hidden;
         }
-        
         .hero::before {
             content: '';
             position: absolute;
@@ -40,7 +37,6 @@
                 radial-gradient(circle at 80% 80%, rgba(72, 198, 239, 0.2) 0%, transparent 50%);
             animation: float 15s ease-in-out infinite;
         }
-        
         .hero::after {
             content: '';
             position: absolute;
@@ -50,12 +46,10 @@
             height: 100px;
             background: linear-gradient(to top, #ffffff 0%, transparent 100%);
         }
-        
         @keyframes float {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
             50% { transform: translate(-50px, 50px) rotate(180deg); }
         }
-        
         .hero h1 {
             font-size: 4.5em;
             margin-bottom: 25px;
@@ -68,7 +62,6 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
         .hero p {
             font-size: 1.5em;
             margin-bottom: 40px;
@@ -79,7 +72,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -90,7 +82,6 @@
                 transform: translateY(0);
             }
         }
-        
         .cta-btn {
             display: inline-block;
             background: white;
@@ -105,24 +96,20 @@
             position: relative;
             animation: fadeInUp 1s ease 0.4s both;
         }
-        
         .cta-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.3);
             background: #f0f0f0;
         }
-        
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 40px;
         }
-        
         .services {
             padding: 100px 20px;
             background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
         }
-        
         .services h2 {
             text-align: center;
             font-size: 3em;
@@ -131,7 +118,6 @@
             font-weight: 800;
             letter-spacing: -1px;
         }
-        
         .services h2::after {
             content: '';
             display: block;
@@ -140,14 +126,12 @@
             background: linear-gradient(90deg, #667eea, #764ba2);
             margin: 20px auto 60px;
             border-radius: 3px;
-        }
-        
+        }        
         .service-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 50px;
-        }
-        
+        }        
         .service-card {
             background: white;
             padding: 50px 40px;
@@ -157,8 +141,7 @@
             position: relative;
             overflow: hidden;
             border: 1px solid rgba(0,0,0,0.04);
-        }
-        
+        }        
         .service-card::before {
             content: '';
             position: absolute;
@@ -170,8 +153,7 @@
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-        
+        }        
         .service-card::after {
             content: '';
             position: absolute;
@@ -183,65 +165,54 @@
             opacity: 0;
             transition: opacity 0.4s ease;
             z-index: 0;
-        }
-        
+        }        
         .service-card:hover {
             transform: translateY(-12px);
             box-shadow: 0 20px 60px rgba(102, 126, 234, 0.15);
             border-color: rgba(102, 126, 234, 0.1);
-        }
-        
+        }        
         .service-card:hover::before {
             transform: scaleX(1);
-        }
-        
+        }        
         .service-card:hover::after {
             opacity: 1;
-        }
-        
+        }        
         .service-card > * {
             position: relative;
             z-index: 1;
-        }
-        
+        }        
         .service-icon {
             font-size: 3em;
             margin-bottom: 20px;
-        }
-        
+        }        
         .service-card h3 {
             font-size: 1.6em;
             margin-bottom: 15px;
             color: #0f0c29;
             font-weight: 700;
-        }
-        
+        }        
         .service-card p {
             color: #64748b;
             line-height: 1.8;
             font-size: 1.05em;
-        }
-        
+        }       
         .benefits {
             padding: 80px 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-        }
-        
+        }   
         .benefits h2 {
             text-align: center;
             font-size: 2.5em;
             margin-bottom: 60px;
-        }
-        
+        } 
         .benefit-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
             max-width: 1200px;
             margin: 0 auto;
-        }
-        
+        }        
         .benefit-item {
             display: flex;
             align-items: flex-start;
@@ -251,51 +222,43 @@
             border-radius: 15px;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
-        }
-        
+        }        
         .benefit-item:hover {
             background: rgba(255,255,255,0.2);
             transform: scale(1.05);
-        }
-        
+        }       
         .benefit-icon {
             font-size: 2em;
             flex-shrink: 0;
         }
-        
         .contact {
             padding: 80px 20px;
             text-align: center;
             background: white;
         }
-        
         .pricing {
             padding: 80px 20px;
             background: white;
-        }
-        
+        }        
         .pricing h2 {
             text-align: center;
             font-size: 2.5em;
             margin-bottom: 15px;
             color: #667eea;
-        }
-        
+        }      
         .pricing-subtitle {
             text-align: center;
             font-size: 1.2em;
             color: #666;
             margin-bottom: 60px;
-        }
-        
+        }        
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 50px;
             max-width: 1100px;
             margin: 0 auto;
-        }
-        
+        }        
         .pricing-card {
             background: white;
             border-radius: 20px;
@@ -304,22 +267,18 @@
             transition: all 0.3s ease;
             position: relative;
             border: 2px solid #f0f0f0;
-        }
-        
+        }        
         .pricing-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-        
+        }       
         .pricing-card.featured {
             border: 3px solid #667eea;
             transform: scale(1.05);
-        }
-        
+        }        
         .pricing-card.featured:hover {
             transform: scale(1.05) translateY(-10px);
-        }
-        
+        }        
         .badge {
             position: absolute;
             top: -15px;
@@ -332,68 +291,57 @@
             font-weight: bold;
             font-size: 0.9em;
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-        
+        }        
         .pricing-header {
             text-align: center;
             margin-bottom: 30px;
-        }
-        
+        }        
         .pricing-icon {
             font-size: 3.5em;
             margin-bottom: 15px;
-        }
-        
+        }        
         .pricing-header h3 {
             font-size: 1.8em;
             color: #333;
             margin-bottom: 20px;
-        }
-        
+        }       
         .price {
             display: flex;
             align-items: flex-start;
             justify-content: center;
             margin-bottom: 10px;
-        }
-        
+        }       
         .currency {
             font-size: 1.5em;
             font-weight: bold;
             color: #667eea;
             margin-top: 5px;
             margin-right: 5px;
-        }
-        
+        }       
         .amount {
             font-size: 3.5em;
             font-weight: bold;
             color: #667eea;
             line-height: 1;
-        }
-        
+        }        
         .price-description {
             color: #666;
             font-size: 1em;
-        }
-        
+        }        
         .pricing-features {
             list-style: none;
             margin: 30px 0;
             text-align: left;
-        }
-        
+        }        
         .pricing-features li {
             padding: 12px 0;
             color: #555;
             border-bottom: 1px solid #f0f0f0;
             font-size: 1em;
-        }
-        
+        }    
         .pricing-features li:last-child {
             border-bottom: none;
-        }
-        
+        }       
         .pricing-btn {
             display: block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -405,36 +353,30 @@
             transition: all 0.3s ease;
             text-align: center;
             margin-top: 20px;
-        }
-        
+        }       
         .pricing-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-        }
-        
+        }        
         .pricing-card.featured .pricing-btn {
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
             box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
-        }
-        
+        }       
         .contact {
             padding: 80px 20px;
             text-align: center;
             background: #f8f9fa;
-        }
-        
+        }        
         .contact h2 {
             font-size: 2.5em;
             margin-bottom: 15px;
             color: #667eea;
-        }
-        
+        } 
         .contact > .container > p {
             font-size: 1.2em;
             margin-bottom: 50px;
             color: #666;
-        }
-        
+        }        
         .contact-form {
             max-width: 1000px;
             margin: 0 auto;
@@ -443,26 +385,22 @@
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             text-align: left;
-        }
-        
+        }        
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-        }
-        
+        }       
         .form-group {
             margin-bottom: 25px;
-        }
-        
+        }        
         .form-group label {
             display: block;
             margin-bottom: 8px;
             color: #333;
             font-weight: 600;
             font-size: 0.95em;
-        }
-        
+        }       
         .form-group input,
         .form-group select,
         .form-group textarea {
@@ -473,40 +411,34 @@
             font-size: 1em;
             font-family: inherit;
             transition: all 0.3s ease;
-        }
-        
+        }     
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-        
+        }        
         .form-group textarea {
             resize: vertical;
-        }
-        
+        }        
         .checkbox-group {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
             margin-top: 10px;
-        }
-        
+        }        
         .checkbox-group label {
             display: flex;
             align-items: center;
             font-weight: normal;
             font-size: 0.95em;
             margin: 0;
-        }
-        
+        }        
         .checkbox-group input[type="checkbox"] {
             width: auto;
             margin-right: 8px;
-        }
-        
+        }        
         .submit-btn {
             width: 100%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -519,41 +451,34 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin-top: 10px;
-        }
-        
+        }       
         .submit-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-        }
-        
+        }      
         .form-note {
             text-align: center;
             color: #666;
             font-size: 0.9em;
             margin-top: 20px;
-        }
-        
+        }        
         @media (max-width: 768px) {
             .contact-form {
                 padding: 30px 20px;
-            }
-            
+            }           
             .form-row {
                 grid-template-columns: 1fr;
-            }
-            
+            }         
             .checkbox-group {
                 grid-template-columns: 1fr;
             }
-        }
-        
+        }       
         footer {
             background: #2d3748;
             color: white;
             text-align: center;
             padding: 30px 20px;
-        }
-        
+        }        
         /* Success Message Styles */
         .success-message {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
@@ -564,7 +489,6 @@
             box-shadow: 0 20px 60px rgba(16, 185, 129, 0.3);
             animation: slideDown 0.5s ease;
         }
-
         @keyframes slideDown {
             from {
                 opacity: 0;
@@ -575,7 +499,6 @@
                 transform: translateY(0);
             }
         }
-
         .success-icon {
             width: 80px;
             height: 80px;
@@ -588,19 +511,16 @@
             margin: 0 auto 1.5rem;
             border: 4px solid rgba(255,255,255,0.3);
         }
-
         .success-content h3 {
             font-size: 2rem;
             margin-bottom: 1rem;
             font-weight: 700;
         }
-
         .success-content > p {
             font-size: 1.1rem;
             opacity: 0.95;
             margin-bottom: 2rem;
         }
-
         .success-details {
             background: rgba(255,255,255,0.15);
             padding: 1.5rem;
@@ -608,7 +528,6 @@
             margin-bottom: 2rem;
             backdrop-filter: blur(10px);
         }
-
         .detail-item {
             display: flex;
             align-items: center;
@@ -616,16 +535,13 @@
             padding: 0.75rem 0;
             font-size: 1rem;
         }
-
         .detail-item:not(:last-child) {
             border-bottom: 1px solid rgba(255,255,255,0.2);
         }
-
         .detail-icon {
             font-size: 1.5rem;
             flex-shrink: 0;
         }
-
         .btn-new-request {
             background: white;
             color: #10b981;
@@ -638,69 +554,54 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-
         .btn-new-request:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
-        
         @media (max-width: 1200px) {
             .service-grid {
                 grid-template-columns: repeat(2, 1fr);
-            }
-            
+            }       
             .container {
                 max-width: 100%;
                 padding: 0 30px;
             }
         }
-        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5em;
-            }
-            
+            } 
             .hero p {
                 font-size: 1.1em;
-            }
-            
+            }    
             .services h2, .benefits h2, .contact h2 {
                 font-size: 2em;
-            }
-            
+            }           
             .service-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
-            }
-            
+            }         
             .benefit-list {
                 grid-template-columns: 1fr;
-            }
-            
+            }      
             .pricing-grid {
                 grid-template-columns: 1fr;
             }
-            
             .contact-form {
                 padding: 30px 20px;
-            }
-            
+            }           
             .form-row {
                 grid-template-columns: 1fr;
             }
-            
             .checkbox-group {
                 grid-template-columns: 1fr;
-            }
-            
+            }     
             .container {
                 padding: 0 20px;
             }
-
             .success-message {
                 padding: 2rem 1.5rem;
             }
-
             .success-content h3 {
                 font-size: 1.5rem;
             }
@@ -714,7 +615,6 @@
             <p>Diseño moderno, rendimiento excepcional y resultados reales para tu negocio</p>
         </div>
     </section>
-
     <section class="services">
         <div class="container">
             <h2>Servicios Profesionales</h2>
@@ -724,31 +624,26 @@
                     <h3>Rediseño Completo</h3>
                     <p>Creo diseños modernos y atractivos con código limpio. Tu sitio lucirá profesional y contemporáneo, reflejando la calidad de tu marca.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Optimización de Código</h3>
                     <p>Limpio y optimizo el código de tu sitio para mejor rendimiento. Código eficiente significa cargas más rápidas y mejor experiencia de usuario.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">📱</div>
                     <h3>Diseño Responsive</h3>
                     <p>Desarrollo sitios que se adaptan perfectamente a móviles, tablets y computadoras. Una experiencia visual impecable en cualquier pantalla.</p>
-                </div>
-                
+                </div>             
                 <div class="service-card">
                     <div class="service-icon">💻</div>
                     <h3>Desarrollo Frontend</h3>
                     <p>Creo interfaces interactivas con HTML, CSS, JavaScript y React. Desde páginas simples hasta aplicaciones web complejas.</p>
-                </div>
-                
+                </div>    
                 <div class="service-card">
                     <div class="service-icon">✨</div>
                     <h3>Animaciones e Interactividad</h3>
                     <p>Agrego efectos visuales, animaciones suaves y elementos interactivos que hacen tu sitio más atractivo y profesional.</p>
-                </div>
-                
+                </div> 
                 <div class="service-card">
                     <div class="service-icon">🔧</div>
                     <h3>Solución de Problemas</h3>
@@ -757,7 +652,6 @@
             </div>
         </div>
     </section>
-
     <section class="benefits">
         <div class="container">
             <h2>¿Por Qué Mejorar Tu Sitio Web?</h2>
@@ -768,24 +662,21 @@
                         <h4>Primera Impresión Poderosa</h4>
                         <p>Tienes 3 segundos para impresionar. Un sitio profesional genera confianza instantánea.</p>
                     </div>
-                </div>
-                
+                </div>  
                 <div class="benefit-item">
                     <div class="benefit-icon">📈</div>
                     <div>
                         <h4>Más Conversiones</h4>
                         <p>Un sitio optimizado convierte más visitantes en clientes reales.</p>
                     </div>
-                </div>
-                
+                </div> 
                 <div class="benefit-item">
                     <div class="benefit-icon">🚀</div>
                     <div>
                         <h4>Ventaja Competitiva</h4>
                         <p>Destaca sobre tu competencia con una presencia digital superior.</p>
                     </div>
-                </div>
-                
+                </div>              
                 <div class="benefit-item">
                     <div class="benefit-icon">💰</div>
                     <div>
@@ -796,12 +687,10 @@
             </div>
         </div>
     </section>
-
     <section class="pricing">
         <div class="container">
             <h2>Precios Transparentes</h2>
-            <p class="pricing-subtitle">Inversión clara y directa para tu proyecto</p>
-            
+            <p class="pricing-subtitle">Inversión clara y directa para tu proyecto</p>            
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -823,7 +712,6 @@
                     </ul>
                     <a href="#contacto" class="pricing-btn">Solicitar Servicio</a>
                 </div>
-
                 <div class="pricing-card featured">
                     <div class="badge">Más Popular</div>
                     <div class="pricing-header">
@@ -849,12 +737,10 @@
             </div>
         </div>
     </section>
-
     <section class="contact" id="contacto">
         <div class="container">
             <h2>Solicita Tu Proyecto</h2>
-            <p>Completa el formulario con los detalles de tu proyecto y te contactaré pronto</p>
-            
+            <p>Completa el formulario con los detalles de tu proyecto y te contactaré pronto</p>    
             <!-- Mensaje de Éxito -->
             <div id="successMessage" class="success-message" style="display: none;">
                 <div class="success-icon">✓</div>
@@ -877,33 +763,28 @@
                     </div>
                     <button onclick="resetForm()" class="btn-new-request">Enviar Otra Solicitud</button>
                 </div>
-            </div>
-            
+            </div>       
             <form class="contact-form" id="projectForm">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="nombre">Nombre Completo *</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-                    </div>
-                    
+                    </div>   
                     <div class="form-group">
                         <label for="email">Email *</label>
                         <input type="email" id="email" name="email" required placeholder="tu@email.com">
                     </div>
-                </div>
-                
+                </div>       
                 <div class="form-row">
                     <div class="form-group">
                         <label for="telefono">Teléfono *</label>
                         <input type="tel" id="telefono" name="telefono" required placeholder="809-123-4567">
-                    </div>
-                    
+                    </div>                 
                     <div class="form-group">
                         <label for="empresa">Empresa/Negocio</label>
                         <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
                     </div>
-                </div>
-                
+                </div>            
                 <div class="form-group">
                     <label for="servicio">Tipo de Servicio *</label>
                     <select id="servicio" name="servicio" required>
@@ -913,13 +794,11 @@
                         <option value="servicio-personalizado">Servicio Personalizado</option>
                     </select>
                     <p class="service-note" id="serviceNote" style="font-size: 0.9em; color: #667eea; margin-top: 5px;"></p>
-                </div>
-                
+                </div>            
                 <div class="form-group">
                     <label for="sitioActual">URL de tu sitio actual (si tienes)</label>
                     <input type="url" id="sitioActual" name="sitioActual" placeholder="https://tusitio.com">
-                </div>
-                
+                </div>                
                 <div class="form-group">
                     <label for="tipoNegocio">¿Qué tipo de negocio/proyecto es? *</label>
                     <select id="tipoNegocio" name="tipoNegocio" required>
@@ -933,22 +812,18 @@
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-                
                 <div class="form-group">
                     <label for="descripcion">Describe tu proyecto *</label>
                     <textarea id="descripcion" name="descripcion" rows="5" required placeholder="Cuéntame qué necesitas: ¿Qué problemas tiene tu sitio actual? ¿Qué funcionalidades quieres? ¿Tienes ejemplos de sitios que te gusten?"></textarea>
-                </div>
-                
+                </div>             
                 <div class="form-group">
                     <label for="colores">Colores preferidos para tu sitio</label>
                     <input type="text" id="colores" name="colores" placeholder="Ej: Azul, blanco, negro">
-                </div>
-                
+                </div>                
                 <div class="form-group">
                     <label for="referencia">URLs de sitios que te gusten (referencia)</label>
                     <textarea id="referencia" name="referencia" rows="2" placeholder="https://ejemplo1.com, https://ejemplo2.com"></textarea>
-                </div>
-                
+                </div>                
                 <div class="form-group">
                     <label for="funcionalidades">Funcionalidades específicas que necesitas</label>
                     <div class="checkbox-group">
@@ -961,8 +836,7 @@
                         <label><input type="checkbox" name="func" value="redes"> Integración redes sociales</label>
                         <label><input type="checkbox" name="func" value="videos"> Videos</label>
                     </div>
-                </div>
-                
+                </div>                
                 <div class="form-group">
                     <label for="plazo">¿Cuándo necesitas el proyecto? *</label>
                     <select id="plazo" name="plazo" required>
@@ -972,68 +846,52 @@
                         <option value="flexible">En 2-3 semanas</option>
                         <option value="sin-prisa">Sin prisa específica</option>
                     </select>
-                </div>
-                
+                </div>                
                 <div class="form-group">
                     <label for="comentarios">Comentarios adicionales</label>
                     <textarea id="comentarios" name="comentarios" rows="3" placeholder="Cualquier otra información que consideres importante"></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn" id="submitBtn">Enviar Solicitud</button>
-                
+                </div>                
+                <button type="submit" class="submit-btn" id="submitBtn">Enviar Solicitud</button>      
                 <p class="form-note">* Campos obligatorios. Te contactaré dentro de 24 horas.</p>
             </form>
         </div>
     </section>
-
     <footer>
         <p>&copy; 2026 Servicios de Mejora Web. Todos los derechos reservados.</p>
-    </footer>
-    
+    </footer>    
     <script>
         // ========================================
         // INTEGRACIÓN CON PANEL DE ADMINISTRACIÓN
-        // ========================================
-        
+        // ========================================   
         // Función para generar ID único
         function generarId() {
             return Date.now().toString(36) + Math.random().toString(36).substr(2);
         }
-
         // Función para enviar pedido al panel de administración
         function enviarPedidoAlPanel(datosFormulario) {
             // Construir descripción detallada del proyecto
             let descripcionCompleta = `SERVICIO: ${datosFormulario.servicio}\n\n`;
-            descripcionCompleta += `DESCRIPCIÓN DEL PROYECTO:\n${datosFormulario.descripcion}\n\n`;
-            
+            descripcionCompleta += `DESCRIPCIÓN DEL PROYECTO:\n${datosFormulario.descripcion}\n\n`;    
             if (datosFormulario.empresa) {
                 descripcionCompleta += `EMPRESA: ${datosFormulario.empresa}\n`;
-            }
-            
+            }    
             if (datosFormulario.sitioActual) {
                 descripcionCompleta += `SITIO ACTUAL: ${datosFormulario.sitioActual}\n`;
-            }
-            
-            descripcionCompleta += `TIPO DE NEGOCIO: ${datosFormulario.tipoNegocio}\n`;
-            
+            }     
+            descripcionCompleta += `TIPO DE NEGOCIO: ${datosFormulario.tipoNegocio}\n`;   
             if (datosFormulario.colores) {
                 descripcionCompleta += `COLORES PREFERIDOS: ${datosFormulario.colores}\n`;
-            }
-            
+            }  
             if (datosFormulario.referencia) {
                 descripcionCompleta += `REFERENCIAS: ${datosFormulario.referencia}\n`;
-            }
-            
+            }            
             if (datosFormulario.funcionalidades && datosFormulario.funcionalidades.length > 0) {
                 descripcionCompleta += `FUNCIONALIDADES: ${datosFormulario.funcionalidades.join(', ')}\n`;
-            }
-            
-            descripcionCompleta += `PLAZO: ${datosFormulario.plazo}\n`;
-            
+            }          
+            descripcionCompleta += `PLAZO: ${datosFormulario.plazo}\n`;           
             if (datosFormulario.comentarios) {
                 descripcionCompleta += `\nCOMENTARIOS ADICIONALES:\n${datosFormulario.comentarios}`;
             }
-
             // Crear objeto del pedido
             const nuevoPedido = {
                 id: generarId(),
@@ -1053,7 +911,6 @@
                 createdAt: new Date().toISOString(),
                 updatedAt: new Date().toISOString()
             };
-
             // Obtener pedidos existentes del localStorage
             let pedidos = [];
             try {
@@ -1065,10 +922,8 @@
                 console.error('Error al cargar pedidos:', e);
                 return false;
             }
-
             // Agregar nuevo pedido al inicio
             pedidos.unshift(nuevoPedido);
-
             // Guardar de vuelta en localStorage
             try {
                 localStorage.setItem('orders', JSON.stringify(pedidos));
@@ -1078,19 +933,15 @@
                 return false;
             }
         }
-
         document.getElementById('projectForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
+            e.preventDefault();    
             // Deshabilitar botón mientras se procesa
             const submitBtn = document.getElementById('submitBtn');
             const originalText = submitBtn.textContent;
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Enviando...';
-            
+            submitBtn.textContent = 'Enviando...';      
             const formData = new FormData(this);
-            const data = {};
-            
+            const data = {};    
             formData.forEach((value, key) => {
                 if (key === 'func') {
                     if (!data.funcionalidades) data.funcionalidades = [];
@@ -1098,22 +949,18 @@
                 } else {
                     data[key] = value;
                 }
-            });
-            
+            });    
             // Simular pequeño delay para mejor UX
             setTimeout(() => {
                 // Enviar al panel de administración
-                const exito = enviarPedidoAlPanel(data);
-                
+                const exito = enviarPedidoAlPanel(data);     
                 // Restaurar botón
                 submitBtn.disabled = false;
-                submitBtn.textContent = originalText;
-                
+                submitBtn.textContent = originalText;              
                 if (exito) {
                     // Ocultar formulario y mostrar mensaje de éxito
                     document.getElementById('projectForm').style.display = 'none';
-                    document.getElementById('successMessage').style.display = 'block';
-                    
+                    document.getElementById('successMessage').style.display = 'block';                   
                     // Scroll suave al mensaje
                     document.getElementById('successMessage').scrollIntoView({ 
                         behavior: 'smooth', 
@@ -1124,25 +971,21 @@
                 }
             }, 800);
         });
-
         // Función para resetear el formulario y mostrar de nuevo
         function resetForm() {
             document.getElementById('projectForm').reset();
             document.getElementById('projectForm').style.display = 'block';
-            document.getElementById('successMessage').style.display = 'none';
-            
+            document.getElementById('successMessage').style.display = 'none';            
             // Scroll al formulario
             document.getElementById('contacto').scrollIntoView({ 
                 behavior: 'smooth', 
                 block: 'start' 
             });
         }
-
         // Mostrar nota de servicio cuando se selecciona
         document.getElementById('servicio').addEventListener('change', function() {
             const note = document.getElementById('serviceNote');
-            const value = this.value;
-            
+            const value = this.value;            
             if (value === 'modificaciones') {
                 note.textContent = 'Ideal para optimizaciones y mejoras específicas de sitios existentes';
             } else if (value === 'sitio-completo') {
